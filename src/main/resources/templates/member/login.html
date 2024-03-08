@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html 	 xmlns:th="http://www.thymeleaf.org"
+          xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+          layout:decorate="~{layouts/layout}">
+
+<th:block layout:fragment="css">
+    <link th:href="@{/css/login.css}" rel="stylesheet">
+    <!-- [외부 js 파일 경로 지정] -->
+    <!--<script type="text/javascript" th:src="@{/js/kwon.js}"></script>-->
+</th:block>
+
+<div id="content-group" layout:fragment="content">
+    <div class="inner-text">로그인</div>
+    <div class="login-group">
+        <form>
+            <div class="login-text-group">
+                <div class="input-wraper">
+                    <input class="input-box" name="id" type="text" placeholder="아이디를 입력해주세요">
+                </div>
+                <div class="input-wraper">
+                    <input class="input-box" name="pw" type="password" placeholder="비밀번호를 입력해주세요">
+                </div>
+            </div>
+        </form>
+        <div class="find-group">
+            <a class="find-text">아이디 찾기</a>
+            <span class="line"></span>
+            <a class="find-text">비밀번호 찾기</a>
+        </div>
+        <div class="button-group">
+            <button class="login-btn" type="submit">
+                <span class="btn-text">로그인</span>
+            </button>
+            <button class="join-btn">
+                <span class="btn-text">회원가입</span>
+            </button>
+            <button class="kakao-btn">
+                <span class="ico-kakao"></span>
+                <span class="btn-text-kakao">카카오계정 로그인</span>
+            </button>
+            <a class="join-kakao" onclick="">카카오계정으로 데이그램 시작하기</a>
+        </div>
+    </div>
+</div>
+</html>

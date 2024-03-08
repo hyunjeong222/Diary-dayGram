@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+#content-group {
+    min-width: 1050px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.inner-text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.login-group {
+    width: 340px;
+    margin: 0px auto;
+    letter-spacing: -0.6px;
+}
+
+.login-text-group {
+    margin-top: 30px;
+}
+
+.input-wraper {
+    padding-bottom: 12px;
+}
+
+.input-wraper .input-box {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.find-group {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.find-group .find-text {
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+.line {
+    width: 1px;
+    height: 10px;
+    margin: 3px 6px 0px;
+    background-color: rgb(51, 51, 51);
+}
+
+.button-group {
+    margin-top: 28px;
+}
+
+.login-btn {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #3361cc;
+    border: 0px none;
+}
+
+.btn-text {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.join-btn {
+    margin-top: 10px;
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: #3361cc;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #3361cc;
+}
+
+.kakao-btn {
+    margin-top: 10px;
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #ffe500;
+    border: 0px none;
+}
+
+.ico-kakao {
+    display: inline-block;
+    margin-right: 7px;
+    width: 17px;
+    height: 17px;
+    background-position: -50px -110px;
+    background-image: url(https://t1.daumcdn.net/tistory_admin/static/top/pc/img_top_200910.png);
+    background-size: 200px 200px;
+}
+
+.btn-text-kakao {
+    padding-top: 4px;
+    font-size: 16px;
+    color: #191919;
+    line-height: 10px;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.join-kakao {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}

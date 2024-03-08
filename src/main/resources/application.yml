@@ -1,0 +1,39 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /diary
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  #MySQL
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/diary?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: diarymaster
+    password: 1234
+
+  #JPA
+  jpa:
+    #database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        highlight_sql: true
+    defer-datasource-initialization: true
+
+    #thymeleaf
+    thymeleaf:
+      check-template-location: true
+      prefix: classpath:/templates/
+      suffix: .html
+      cache: false
+      enabled: true
+
+    mvc:
+      static-path-pattern: /static/**

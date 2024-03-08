@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#content-group {
+    max-width: 600px;
+    width: 85%;
+    margin: auto;
+    margin-top: 185px;
+}
+
+.inner-text h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.55em;
+    text-align: center;
+}
+
+.inner-text p {
+    font-size: 18px;
+    line-height: 1.6em;
+    margin: 1.6em;
+    text-align: center;
+}
+
+.signup-group {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-group .signup-btn {
+    border-radius: 4px;
+    background-color: #3361cc;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 18px;
+    color: #fff;
+}
+
+.signup-group .signup-btn:hover {
+    background-color: #113EAD;
+}

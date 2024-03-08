@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html 	 xmlns:th="http://www.thymeleaf.org"
+         xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+         layout:decorate="~{layouts/layout}">
+
+<th:block layout:fragment="css">
+    <link th:href="@{/css/index.css}" rel="stylesheet">
+    <!-- [외부 js 파일 경로 지정] -->
+    <!--<script type="text/javascript" th:src="@{/js/kwon.js}"></script>-->
+</th:block>
+
+<div id="content-group" layout:fragment="content">
+    <div class="inner-text">
+        <h1>나를 위한 기억 저장소, 데이그램</h1>
+        <p>내 안의 나와 마주하는 시간, 데이그램에 기록한 일상이 소중한 기억으로 남을 거예요. 지금 바로 기록해 보세요!</p>
+    </div>
+    <div class="signup-group">
+        <a th:href="@{/member/login}" class="signup-btn">지금 시작하기</a>
+    </div>
+</div>
+</html>
